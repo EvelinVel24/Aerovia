@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AeroVia Express</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Verdana:wght@400&family=Gill+Sans:wght@400&display=swap">
+</head>
+<body class="font-verdana">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg" style="background-color: #051B54;">
+    <a class="navbar-brand" href="#" style="font-family: 'Gill Sans', sans-serif; color: white;">AeroVia Express</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: white;">Ofertas y destinos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: white;">Mis viajes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: white;">Centro de ayuda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: white;">Estado de vuelo</a>
+        </li>
+        <li class="nav-item ml-auto">
+          <button class="btn btn-login" type="button" style="background-color: #FFFFFF33; color: white;">Iniciar sesión</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Promo Section -->
+  <div class="bg-info text-white text-center p-4">
+    <h2>¡Vacaciones de verano! Vuela por Chile y Sudamérica con hasta 40% de descuento.</h2>
+    <p>Encuentra paquetes, hoteles, seguros y arriendo de autos en AeroVia Express. Compra aquí</p>
+    <img src="ruta/a/tu/imagen.jpg" alt="Promoción" class="img-fluid">
+  </div>
+
+  <!-- Form Section -->
+  <div class="container mt-4 bg-white shadow-sm p-4">
+    <h3>Busca tu próximo viaje</h3>
+    <div class="btn-group mb-3" role="group" aria-label="Busqueda opciones">
+      <button type="button" class="btn btn-outline-dark">Vuelos</button>
+      <button type="button" class="btn btn-outline-dark">Paquetes</button>
+      <button type="button" class="btn btn-outline-dark">Hoteles</button>
+      <button type="button" class="btn btn-outline-dark">Autos</button>
+      <button type="button" class="btn btn-outline-dark">Seguros</button>
+      <button type="button" class="btn btn-outline-dark">Upgrade</button>
+    </div>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="inputOrigen">Origen</label>
+          <input type="text" class="form-control" id="inputOrigen" placeholder="Ciudad de origen" style="color: #051B54;">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputDestino">Destino</label>
+          <input type="text" class="form-control" id="inputDestino" placeholder="Ciudad de destino" style="color: #051B54;">
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputFechaIda">Fecha Ida</label>
+          <input type="date" class="form-control" id="inputFechaIda">
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputFechaVuelta">Fecha Vuelta</label>
+          <input type="date" class="form-control" id="inputFechaVuelta" disabled>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Buscar</button>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
