@@ -58,57 +58,57 @@
     </div>
   </div>
 
-  <!-- Search Options -->
+  <!-- Form Section -->
   <div class="container mt-4">
-    <div class="btn-group mb-3" role="group" aria-label="Busqueda opciones">
-      <button type="button" class="btn btn-outline-dark">Vuelos</button>
-      <button type="button" class="btn btn-outline-dark">Paquetes</button>
-      <button type="button" class="btn btn-outline-dark">Hoteles</button>
-      <button type="button" class="btn btn-outline-dark">Autos</button>
-      <button type="button" class="btn btn-outline-dark">Seguros</button>
-      <button type="button" class="btn btn-outline-dark">Upgrade</button>
-    </div>
-
-    <!-- Form Section -->
     <div class="row">
       <div class="col-md-12">
         <div class="bg-white shadow-lg p-4 rounded" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);">
-          <form>
-            <div class="form-row mb-3">
-              <div class="form-group col-md-3">
-                <label for="inputIdaVuelta">Ida y vuelta</label>
-                <select id="inputIdaVuelta" class="form-control">
-                  <option>Ida y vuelta</option>
-                </select>
-              </div>
-              <div class="form-group col-md-3">
-                <label for="inputEconomy">Economy</label>
-                <select id="inputEconomy" class="form-control">
-                  <option>Economy</option>
-                </select>
-              </div>
-              <div class="form-group col-md-3">
-                <label for="inputPasajeros">1 Pasajero</label>
-                <select id="inputPasajeros" class="form-control">
-                  <option>1 Pasajero</option>
-                </select>
-              </div>
-              <div class="form-group col-md-3 d-flex align-items-end">
-                <button type="submit" class="btn btn-danger w-100">Buscar</button>
-              </div>
+          <!-- Opciones de búsqueda -->
+          <div class="btn-group mb-3" role="group" aria-label="Busqueda opciones">
+            <button type="button" class="btn btn-outline-dark">Vuelos</button>
+            <button type="button" class="btn btn-outline-dark">Paquetes</button>
+            <button type="button" class="btn btn-outline-dark">Hoteles</button>
+            <button type="button" class="btn btn-outline-dark">Autos</button>
+            <button type="button" class="btn btn-outline-dark">Seguros</button>
+            <button type="button" class="btn btn-outline-dark">Upgrade</button>
+          </div>
+
+          <!-- Opciones de búsqueda no funcionales -->
+          <div class="form-row mb-3">
+            <div class="form-group col-md-4">
+              <label for="inputIdaVuelta">Ida y Vuelta</label>
             </div>
-            <div class="form-row mb-3">
-              <div class="form-group col-md-3">
+            <div class="form-group col-md-4">
+              <label for="inputEconomy">Economy</label>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputPasajeros">1 Pasajero</label>
+            </div>
+          </div>
+
+          <!-- Formulario -->
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-2">
                 <input type="text" class="form-control" id="inputOrigen" placeholder="Origen" style="color: #051B54;">
               </div>
-              <div class="form-group col-md-3">
+              <div class="form-group col-md-2">
                 <input type="text" class="form-control" id="inputDestino" placeholder="Destino" style="color: #051B54;">
               </div>
-              <div class="form-group col-md-3">
+              <div class="form-group col-md-2">
+                <input type="text" class="form-control" id="inputDestino" placeholder="Fecha Ida" style="color: #051B54;">
+              </div>
+              <div class="form-group col-md-2">
                 <input type="date" class="form-control" id="inputFechaIda">
               </div>
-              <div class="form-group col-md-3">
-                <input type="date" class="form-control" id="inputFechaVuelta">
+              <div class="form-group col-md-2">
+                <input type="text" class="form-control" id="inputDestino" placeholder="Fecha Vuelta" style="color: #051B54;">
+              </div>
+              <div class="form-group col-md-2">
+                <input type="date" class="form-control" id="inputFechaVuelta" disabled>
+              </div>
+              <div class="form-group col-md-2 d-flex align-items-end">
+                <button type="submit" class="btn btn-danger">Buscar</button>
               </div>
             </div>
           </form>
