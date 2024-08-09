@@ -6,9 +6,44 @@
   <title>AeroVia Express</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gill+Sans:wght@400&family=Verdana:wght@400&display=swap">
+  <style>
+    .form-container {
+      max-width: 99%; 
+      margin: 0 auto; 
+    }
+
+    .promo-section {
+      background-color: #62DAD3; 
+      padding: 0; 
+      height: 300px;
+      display: flex;
+    }
+    
+    .promo-text {
+      padding: 20px;
+      margin-left: 20px; 
+      z-index: 1; 
+    }
+    
+    .promo-img {
+      width: auto; 
+      height: 100%; 
+      object-fit: cover;
+      margin-right: 0;
+    }
+
+    .promo-img-container {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end; 
+    }
+
+    .form-container .bg-white {
+      border-radius: 25px; 
+    }
+  </style>
 </head>
 <body>
-  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg" style="background-color: #051B54;">
     <a class="navbar-brand" href="#" style="color: white; font-family: 'Gill Sans', sans-serif;">AeroVia Express</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,7 +56,6 @@
             Ofertas y destinos
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-            <!-- Opciones del dropdown si las necesitas -->
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -29,7 +63,6 @@
             Mis viajes
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-            <!-- Opciones del dropdown si las necesitas -->
           </div>
         </li>
         <li class="nav-item">
@@ -43,56 +76,49 @@
     </div>
   </nav>
 
-  <!-- Promo Section -->
-  <div class="container-fluid" style="background-color: #62DAD3; padding: 0;">
-    <div class="row no-gutters">
-      <div class="col-md-6 d-flex flex-column justify-content-center" style="padding: 20px;">
-        <h2 style="color: #051B54; font-size: 2.5rem; margin-bottom: 10px;">¡Vacaciones de verano!</h2>
-        <p style="color: #051B54; font-size: 1.25rem; margin-bottom: 10px;">Vuela por Chile y Sudamérica con hasta 40% de descuento.</p>
-        <p style="color: #051B54; margin-bottom: 10px;">Encuentra paquetes, hoteles, seguros y arriendo de autos en AeroVia Express.</p>
-        <p style="color: #051B54; font-weight: bold;">Compra aquí.</p>
-      </div>
-      <div class="col-md-6 d-flex justify-content-end p-0">
-        <img src="polynesia.jpg" alt="Promoción" class="img-fluid" style="width: 80%; height: auto; object-fit: cover; margin-right: 0;">
-      </div>
+  <div class="container-fluid promo-section">
+    <div class="promo-text">
+      <h2 style="color: #051B54; font-size: 2.5rem; margin-bottom: 10px;">¡Vacaciones de verano!</h2>
+      <p style="color: #051B54; font-size: 1.25rem; margin-bottom: 10px;">Vuela por Chile y Sudamérica con hasta 40% de descuento</p>
+      <p style="color: #051B54; margin-bottom: 10px;">Encuentra paquetes, hoteles, seguros y arriendo de autos en AeroVia Express</p>
+      <a href="https://alondra.cl/2024/04/08/elvisweek2024/" style="color: #0a73dd; font-weight: bold;">Compra aquí</a>
+    </div>
+    <div class="promo-img-container">
+      <img src="polynesia.jpg" alt="Promoción" class="promo-img">
     </div>
   </div>
 
-  <!-- Form Section -->
-  <div class="container mt-4">
+  <div class="container mt-4 form-container">
     <div class="row">
       <div class="col-md-12">
-        <div class="bg-white shadow-lg p-4 rounded" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);">
-          <!-- Opciones de búsqueda -->
+        <div class="bg-white p-4 rounded" style="border-radius: 25px; box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);">
           <div class="btn-group mb-3" role="group" aria-label="Busqueda opciones">
-            <button type="button" class="btn btn-outline-dark">Vuelos</button>
-            <button type="button" class="btn btn-outline-dark">Paquetes</button>
-            <button type="button" class="btn btn-outline-dark">Hoteles</button>
-            <button type="button" class="btn btn-outline-dark">Autos</button>
-            <button type="button" class="btn btn-outline-dark">Seguros</button>
-            <button type="button" class="btn btn-outline-dark">Upgrade</button>
+            <button type="button" class="btn btn-outline-dark" style="color: #051B54">Vuelos</button>
+            <button type="button" class="btn btn-outline-dark" style="color: #051B54">Paquetes</button>
+            <button type="button" class="btn btn-outline-dark" style="color: #051B54">Hoteles</button>
+            <button type="button" class="btn btn-outline-dark" style="color: #051B54">Autos</button>
+            <button type="button" class="btn btn-outline-dark" style="color: #051B54">Seguros</button>
+            <button type="button" class="btn btn-outline-dark" style="color: #051B54">Upgrade</button>
           </div>
 
-          <!-- Opciones de búsqueda no funcionales -->
           <div class="form-row mb-3">
-            <div class="form-group col-md-4">
-              <label for="inputIdaVuelta">Ida y Vuelta</label>
+            <div class="form-group col-md-1 dropdown-toggle" style="color: #051B54">
+              <label for="inputIdaVuelta" style="color: #051B54">Ida y Vuelta</label>
             </div>
-            <div class="form-group col-md-4">
-              <label for="inputEconomy">Economy</label>
+            <div class="form-group col-md-1 dropdown-toggle" style="color: #051B54">
+              <label for="inputEconomy" style="color: #051B54">Economy</label>
             </div>
-            <div class="form-group col-md-4">
-              <label for="inputPasajeros">1 Pasajero</label>
+            <div class="form-group col-md-1 dropdown-toggle">
+              <label for="inputPasajeros" style="color: #051B54">1 Pasajero</label>
             </div>
           </div>
 
-          <!-- Formulario -->
           <form>
             <div class="form-row">
-              <div class="form-group col-md-2">
+              <div class="form-group col-md-1">
                 <input type="text" class="form-control" id="inputOrigen" placeholder="Origen" style="color: #051B54;">
               </div>
-              <div class="form-group col-md-2">
+              <div class="form-group col-md-1">
                 <input type="text" class="form-control" id="inputDestino" placeholder="Destino" style="color: #051B54;">
               </div>
               <div class="form-group col-md-2">
@@ -122,5 +148,3 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
-
